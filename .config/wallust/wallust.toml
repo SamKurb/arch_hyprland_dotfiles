@@ -50,7 +50,7 @@ palette = "saliencedark"
 # zathura = { template = 'zathura', target = '~/.config/zathura/zathurarc' }
 kitty = { template='kitty.conf', target='~/.config/kitty/themes/wallust.conf'}
 hypr = { template = "hyprland.conf", target = "~/.config/hypr/colors.conf" }
-firefox_user = { template = "firefox_user.js", target = "~/.mozilla/firefox/hy8j6ons.default-release/user.js" }
+firefox_user = { template = "firefox_user.js", target = "~/.config/mozilla/firefox/hy8j6ons.default-release/user.js" }
 #firefox_page_content = { template = "firefox_page_content.css", target = "~/.mozilla/firefox/hy8j6ons.default-release/chrome/page_content.css"}
 pywall_theme = { template = "pywal_theme.json", target = "~/.cache/wal/colors.json" }
 nvim_base16 = { template = "nvim_base16.lua", target = "~/.config/nvim/lua/visual/wallust_colours.lua" }
