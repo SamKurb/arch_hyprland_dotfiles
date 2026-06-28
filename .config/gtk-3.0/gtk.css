@@ -1,0 +1,25 @@
+@import 'colors.css';
+
+.nemo-window,
+.nemo-window .sidebar .view,
+.nemo-window widget {
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+}
+
+.nemo-window nemo-pathbar button {
+    background-image: none;
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
+    border: 1px solid @theme_borders;
+}
+
+.nemo-window nemo-pathbar button:checked {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+.nemo-desktop.nemo-canvas-item {
+    color: @theme_fg_color;
+    text-shadow: 1px 1px 2px black;
+}

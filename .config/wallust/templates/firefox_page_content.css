@@ -1,0 +1,10 @@
+@-moz-document url-prefix("http://"), url-prefix("https://"), url-prefix("file://") {
+  :root {
+    --theme-bg: {{ background  | lighten(0.0627) }};
+    --theme-fg: {{ foreground }};
+    --theme-link: {{ color7 }};
+    --theme-visited: {{ color3 }};
+
+    color-scheme: dark !important;
+  }
+}

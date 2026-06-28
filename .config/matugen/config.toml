@@ -1,0 +1,49 @@
+[config]
+
+[config.wallpaper]
+set = true
+command = 'awww img -t center {{ image }} --transition-fps 165 && wallust run -s {{ image }}'# && kitty +kitten themes --reload-in=all wallust' 
+
+[templates.hyprland]
+input_path = '~/.config/matugen/templates/matugen_hyprland.lua'
+output_path = '~/.config/hypr/colours.lua'
+post_hook = 'hyprctl reload'
+
+#[templates.kitty]
+#input_path = '~/.config/matugen/templates/matugen_kitty.conf'
+#output_path = '~/.config/kitty/themes/Matugen.conf'
+#post_hook = 'wallust run {{ image }} && kitty +kitten themes --reload-in=all wallust'
+
+[templates.gtk3]
+input_path =  '~/.config/matugen/templates/matugen_gtk.conf'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path =  '~/.config/matugen/templates/matugen_gtk.conf'
+output_path = '~/.config/gtk-4.0/colors.css'
+post_hook = '~/.config/matugen/post_hook_scripts/gtk_theme_hot_reload.sh'
+
+[templates.qt5ct]
+input_path = '~/.config/matugen/templates/matugen_qtct.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.qt6ct]
+input_path = '~/.config/matugen/templates/matugen_qtct.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.color-scheme]
+input_path = '~/.config/matugen/templates/Matugen.colors'
+output_path = '~/.local/share/color-schemes/Matugen.colors'
+
+[templates.kvantum_kvconfig]
+input_path = '~/.config/matugen/templates/kvantum-colors.kvconfig'
+output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
+
+[templates.kvantum_svg]
+input_path = '~/.config/matugen/templates/kvantum-colors.svg'
+output_path = '~/.config/Kvantum/matugen/matugen.svg'
+
+[templates.vencord]
+input_path = '~/.config/matugen/templates/vesktop.css'
+output_path = '~/.config/vesktop/themes/matugen.css'

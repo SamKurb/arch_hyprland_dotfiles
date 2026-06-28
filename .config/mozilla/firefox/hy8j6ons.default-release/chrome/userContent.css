@@ -1,0 +1,33 @@
+ /*    __            __  ____            */
+ /*   / /____  _  __/ /_/ __/___  _  __  */
+ /*  / __/ _ \| |/_/ __/ /_/ __ \| |/_/  */
+ /* / /_/  __/>  </ /_/ __/ /_/ />  <    */
+ /* \__/\___/_/|_|\__/_/  \____/_/|_|    */
+
+@import url("content/about.css");
+@import url("content/newtab.css");
+
+/* configurations - DO NOT CHANGE ORDER */
+@import url("defaults.css");
+@import url("config.css");
+
+
+@-moz-document domain("google.com") {
+  body,
+  #hdtbSum,
+  #appbar,
+  .minidiv,
+  .sfbg {
+    background: #161616 !important;
+  }
+}
+
+@-moz-document domain("google.com") {
+    .RDmXvc {
+        background: linear-gradient(
+            90deg,
+            #161616 0%,
+            transparent 100%
+        ) !important;
+    }
+}
