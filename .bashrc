@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='\u@\w\$ '
+PS1='\u@\w \$ '
 
 fastfetch
 
@@ -54,3 +54,4 @@ nvim() {
 }
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias horizon-client="GTK_THEME=Default horizon-client"
